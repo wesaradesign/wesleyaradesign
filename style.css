@@ -1,0 +1,54 @@
+*{padding: 0; margin: 0; font-family: 'Merriweather Sans', sans-serif}
+body {background-color: #773dbd;}
+
+
+/* ------- MAIN -------- */
+
+.container {display:grid; grid-template-columns: 50%;}
+
+.card{width:50%; max-height:100%; margin: 50px auto; overflow: hidden; background-repeat: no-repeat; background-size:cover; box-shadow: .5em .5em 1em -.2em #171616}
+
+#front-card{background-image: url("assets/Front_Business_Card.svg"); grid-column: 1;}
+ 
+#back-card {background-image: url("assets/Back_Business_Card.svg"); grid-column: 2;}
+
+.social_container {margin: 0 0 1em 1em;}
+
+/* ------- TYPE -------- */
+
+h1{font-size: 3.5em;  text-align: center; margin-top: 3%; color: #773dbd;}
+
+h2{font-size: 1.35em; text-align: center; margin-bottom: 35%; font-weight: normal; color: #303030; font-style: italic;}
+
+h4{font-size: 1em; font-weight: normal; color: black;}
+
+/* ------- HYPERLINKS & TEXT HOVER -------- */
+
+a {font-size: 1.15em; font-weight: bold; color: #773dbd;}
+
+a:hover, a:focus{color:#562f8e;}
+
+/* ------- LOGOS -------- */
+
+.front-logos {max-width:40%; display: block; margin:60% auto auto; height:auto;}
+
+.back-logos {margin: 70% auto; width: 50%; height: auto; fill: #ffffffff;}
+
+/* ------- HOME BUTTON -------- */
+
+.home-button {width: 3%; margin-left: 1%; margin-top: 1%; fill: #ffffffff;}
+
+.home-button:hover {fill: #562f8e;}
+
+/* ------- MEDIA QUERY -------- */
+
+@media screen and (max-width: 1210px) {
+	.container {display:block; height: auto;}
+	#front-card {grid-column: none;}
+	#back-card {grid-column: none;}
+	svg.home {width:300%;}
+}
+
+@media screen and (max-width: 650px){
+	.card {width: 80%;}
+}
